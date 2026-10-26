@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InnerSunLove Uploader</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --fondo: #ffffff;
+    --texto: #1b1b1f;
+    --suave: #5a5a66;
+    --linea: #e3e3e8;
+    --acento: #b8832a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#15151a; --texto:#eceef2; --suave:#a0a0ad; --linea:#2c2c35; --acento:#e0a948; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fondo); color: var(--texto);
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 48px 16px 72px;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; letter-spacing: -.01em; }
+  .sub { color: var(--suave); margin: 0 0 36px; }
+  h2 { font-size: 1.05rem; margin: 34px 0 10px; }
+  ul { padding-left: 20px; margin: 10px 0; }
+  li { margin: 5px 0; }
+  a { color: var(--acento); }
+  footer {
+    margin-top: 44px; padding-top: 18px;
+    border-top: 1px solid var(--linea); color: var(--suave); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>InnerSunLove Uploader</h1>
+  <p class="sub">Herramienta propia para administrar el canal de YouTube Inner Sun Love.</p>
+
+  <p>
+    Esta es una aplicación de uso personal. La usa únicamente quien administra el
+    canal <a href="https://youtube.com/@innersunlove">Inner Sun Love</a> para
+    programar las publicaciones del canal y ver sus propias estadísticas, desde
+    su computadora. No se ofrece al público ni tiene usuarios registrados.
+  </p>
+
+  <h2>Qué hace</h2>
+  <ul>
+    <li>Sube al canal los videos preparados y les asigna fecha de publicación, título, descripción, etiquetas y miniatura.</li>
+    <li>Los ordena en las listas de reproducción del canal.</li>
+    <li>Lee las estadísticas del propio canal para decidir qué contenido producir.</li>
+  </ul>
+
+  <h2>Qué permisos pide y para qué</h2>
+  <ul>
+    <li><code>youtube</code> y <code>youtube.force-ssl</code>: ordenar las listas de reproducción y corregir los datos de los videos del canal.</li>
+    <li><code>youtube.upload</code>: subir los videos.</li>
+    <li><code>yt-analytics.readonly</code>: leer las estadísticas del canal, solo lectura.</li>
+  </ul>
+  <p>
+    Todos los permisos se aplican exclusivamente al canal de quien autoriza. La
+    aplicación no accede a canales ajenos ni a ningún otro dato de la cuenta de
+    Google.
+  </p>
+
+  <h2>Privacidad</h2>
+  <p>
+    La aplicación no recoge datos de terceros. El detalle está en la
+    <a href="privacidad.html">política de privacidad</a>.
+  </p>
+
+  <footer>
+    Contacto: <a href="mailto:innersunlove@gmail.com">innersunlove@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
